@@ -1,0 +1,7 @@
+{
+  "name": "myUniverse",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
