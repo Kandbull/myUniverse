@@ -27,7 +27,7 @@
 }
 
 ion-menu::part(backdrop) {
-  background-color: rgba(255, 0, 255, 0.5);
+  background-color: rgba(81, 15, 205, 0.5);
 }
 
 ion-menu::part(container) {
@@ -37,5 +37,6 @@ ion-menu::part(container) {
 }
 
 ion-content{
-  background-color: #8c8c8c;
+  --background: linear-gradient(rgb(62, 14, 110), rgb(22, 13, 117));
 }
+
