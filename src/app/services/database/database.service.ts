@@ -1,27 +1,16 @@
-/**
 import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class DatabaseService {
-
-  constructor() { }
-}
- */
-
-import { Injectable } from '@angular/core';
-//import { SQLite, SQLiteObject } from '@awesome-cordova-plugins/sqlite/ngx';
+import { SQLite, SQLiteObject } from '@awesome-cordova-plugins/sqlite/ngx';
 import { Platform, ToastController } from '@ionic/angular';
 import { BehaviorSubject } from 'rxjs';
-import { Registro } from '../interfaces/registro';
+import { Registro } from 'src/app/interfaces/registro';
+
 
 @Injectable({
   providedIn: 'root'
 })
   
 
-export class DbserviceService {
+export class DatabaseService {
 
   public dataBase!: SQLiteObject;
 

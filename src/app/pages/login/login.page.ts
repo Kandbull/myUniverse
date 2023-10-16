@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationExtras, Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
-import { DataBaseService } from 'src/app/services/database/database.service';
+
 //import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { DatabaseService } from 'src/app/services/database/database.service';
 
 @Component({
   selector: 'app-login',
@@ -32,7 +33,7 @@ export class LoginPage implements OnInit {
   greenflag: string="";
   constructor(private router: Router,
               public toastController: ToastController,
-              private database: DataBase) 
+              private database: DatabaseService) 
               { }
 
   ngOnInit() {
